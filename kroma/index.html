@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KROMA | Moda retro curada</title>
+<meta name="description" content="KROMA es una tienda y curaduría digital de moda retro: piezas revisadas a mano, drops semanales limitados y asesoría de estilo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;700&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stage">
+<header>
+<span class="logo">KROMA</span>
+<nav class="tabs" aria-label="Secciones">
+<button class="tab" data-i="0">Inicio</button><button class="tab" data-i="1">Piezas</button><button class="tab" data-i="2">Beneficios</button><button class="tab" data-i="3">Testimonios</button><button class="tab" data-i="4">Contacto</button>
+</nav>
+<button class="bag px" id="bag" data-go="4" data-type="Pedido de piezas">Bolsa: <span id="cnt">0</span></button>
+</header>
+<div class="view">
+<button class="arrow" id="prev" aria-label="Sección anterior">&lt;</button>
+<button class="arrow" id="next" aria-label="Sección siguiente">&gt;</button>
+<div class="track" id="track">
+
+<section class="slide" aria-label="Inicio">
+<div class="hero">
+<div>
+<span class="pill px">Drop de la semana: quedan 7 piezas</span>
+<h1>Moda retro que se siente viva hoy.</h1>
+<p class="lead">En <strong>KROMA</strong> rescatamos siluetas, texturas y prendas retro con historia para que armes combinaciones con personalidad todos los días—sin complicarte ni disfrazarte.</p>
+<div class="dec" role="group" aria-label="Elige tu década"><span class="px">Elige tu mood</span><button class="px" data-d="70" aria-pressed="true">70s</button><button class="px" data-d="80" aria-pressed="false">80s</button><button class="px" data-d="90" aria-pressed="false">90s</button></div>
+<div class="cta"><button class="btn" data-go="1">Descubre la colección →</button><button class="btn alt" data-go="2">Cómo funciona KROMA</button></div>
+</div>
+<div class="collage">
+<span class="sticker px">new drop!</span>
+<div class="win big"><div class="bar px"><span>mood.exe</span><i><b></b><b></b><b></b></i></div><div class="body"><img class="art ph" id="heroart" src="images/ruleta-vogue-1974.jpg" alt="Collage de moda de los años 70" style="object-position:50% 22%"></div></div>
+<div class="win small"><div class="bar px"><span>look-del-dia</span><i><b></b></i></div><div class="body"><p class="mood" id="mood">Tonos tierra, pana y solapas anchas. Aire de domingo en carretera.</p></div></div>
+</div>
+</div>
+<div class="tv" aria-hidden="true"></div>
+</section>
+
+<section class="slide" aria-label="Piezas y servicios">
+<h2>Piezas con carácter y curaduría a medida</h2>
+<p class="lead">Cada prenda pasa por revisión de tela, costuras y caída. Además, si buscas algo puntual, nuestro servicio de <strong>Búsqueda &amp; Curaduría Retro</strong> caza piezas según tu estilo.</p>
+<div class="car"><div class="cview"><div class="ctrack">
+<article class="win prod p1"><div class="body"><img class="art ph" src="images/bomber-terracota.jpg" alt="Chaqueta bomber naranja terracota con cuello de borrego" style="object-fit:contain;background:#fff;object-position:50% 50%"><h3>Chaqueta Bomber Retro Terracota</h3><p>Corte relajado, forro suave y acabado con textura clásica. Ideal para elevar un básico en segundos.</p><div class="tagrow"><span class="tg">Talla M</span><span class="tg">Estado: excelente</span></div><div class="meta"><b>$289.000</b><button class="btn sm add">Añadir</button></div></div></article>
+<article class="win prod p2"><div class="body"><img class="art ph" src="images/camisa-rayas-retro.jpg" alt="Camisa de rayas de colores con pantalón blanco" style="object-position:50% 30%"><h3>Camisa Boxy Rayas 80s</h3><p>Algodón con caída fresca, cuello estructurado y aire desenfadado para usar abierta o fajada.</p><div class="tagrow"><span class="tg">Talla L</span><span class="tg">Estado: muy bueno</span></div><div class="meta"><b>$129.000</b><button class="btn sm add">Añadir</button></div></div></article>
+<article class="win prod p3"><div class="body"><img class="art ph" src="images/lentes-retro.jpg" alt="Gafas de acetato color marfil" style="object-position:50% 35%"><h3>Gafas de Acetato Retro</h3><p>Montura cuadrada de acetato color marfil con cristales ámbar. Suman un toque suave y elegante.</p><div class="tagrow"><span class="tg">Talla única</span><span class="tg">Estado: como nuevas</span></div><div class="meta"><b>$99.000</b><button class="btn sm add">Añadir</button></div></div></article>
+<article class="win prod p4"><div class="body"><img class="art ph" src="images/bolso-retro.jpg" alt="Bolso de mano con diseño de casete" style="object-fit:contain;background:#fff;object-position:50% 50%"><h3>Bolso Casete Retro</h3><p>Bolso de mano tipo casete en azul, mostaza y rojo, con asas rojas y cierre metálico. Un acento que no pasa desapercibido.</p><div class="tagrow"><span class="tg">1 de 1</span><span class="tg">Estado: muy bueno</span></div><div class="meta"><b>$189.000</b><button class="btn sm add">Reservar</button></div></div></article>
+<article class="win prod p5"><div class="body"><img class="art ph" src="images/cap-retro.jpg" alt="Boina de lana amarilla con gafas ovaladas" style="object-position:50% 28%"><h3>Boina de Lana Mostaza</h3><p>Boina suave en un mostaza vibrante. Funciona con cuellos altos, rayas y gafas ovaladas.</p><div class="tagrow"><span class="tg">Talla única</span><span class="tg">Estado: excelente</span></div><div class="meta"><b>$79.000</b><button class="btn sm add">Añadir</button></div></div></article>
+<article class="win prod p6"><div class="body"><img class="art ph" src="images/corbata-retro.jpg" alt="Corbata ancha con estampado geométrico setentero" style="object-position:50% 45%"><h3>Corbata Ancha Geométrica 70s</h3><p>Estampado de círculos en marrón y dorados, corte ancho y caída suave. Úsala de corbata o como pañuelo al cuello.</p><div class="tagrow"><span class="tg">Talla única</span><span class="tg">Estado: muy bueno</span></div><div class="meta"><b>$69.000</b><button class="btn sm add">Añadir</button></div></div></article>
+<article class="win prod p7"><div class="body"><img class="art ph" src="images/lentes-retro-men.jpg" alt="Gafas metálicas doradas con lentes rojos" style="object-position:50% 45%"><h3>Gafas Metálicas Lente Rojo</h3><p>Marco dorado fino con doble puente y lentes rojos. Look atrevido para el día o la noche.</p><div class="tagrow"><span class="tg">Unisex</span><span class="tg">Estado: como nuevas</span></div><div class="meta"><b>$85.000</b><button class="btn sm add">Añadir</button></div></div></article>
+<article class="win prod p8"><div class="body"><img class="art ph" src="images/moda-retromen.jpg" alt="Look masculino con saco verde y pantalón de rayas" style="object-position:50% 55%"><h3>Conjunto Sastre Verde Pino</h3><p>Saco oversize verde pino y pantalón de rayas anchas crema y verde. Para pasar de la oficina a la fiesta.</p><div class="tagrow"><span class="tg">Talla L</span><span class="tg">Estado: excelente</span></div><div class="meta"><b>$349.000</b><button class="btn sm add">Añadir</button></div></div></article>
+<article class="win prod p9"><div class="body"><img class="art ph" src="images/maquillaje-retro.jpg" alt="Aretes ovalados naranja y maquillaje gráfico" style="object-position:50% 55%"><h3>Aretes Ovalados Naranja Neón</h3><p>Aros ovalados y ligeros en naranja intenso. Perfectos para sumar color a un cuello alto.</p><div class="tagrow"><span class="tg">Pieza única</span><span class="tg">Estado: como nuevos</span></div><div class="meta"><b>$49.000</b><button class="btn sm add">Añadir</button></div></div></article>
+<article class="win prod p5 svc"><div class="bar px"><span>servicio.exe</span><i><b></b></i></div><div class="body"><img class="art ph" src="images/cuadricula-personal-1.jpg" alt="Portada de moda psicodélica de los 70" style="object-position:50% 30%"><h3>Curaduría Personal KROMA</h3><p>Cuéntanos tu talla, paleta favorita y ocasión; te preparamos una selección curada lista para reservar.</p><div class="meta"><b>Desde $59.000</b><button class="btn sm alt" data-go="4" data-type="Pedido personalizado">Reservar</button></div></div></article>
+</div></div>
+<div class="cnav"><button class="cp" aria-label="Piezas anteriores">&lt;</button><button class="cn" aria-label="Más piezas">&gt;</button><button class="btn sm" id="openR" aria-haspopup="dialog">Ver ruleta retro</button><span class="px">Desliza para ver más</span></div></div>
+</section>
+
+<section class="slide" aria-label="Beneficios">
+<h2>Por qué elegir KROMA</h2>
+<p class="lead">Lo que ganas al comprar con nosotros, pieza por pieza.</p>
+<div class="car"><div class="cview"><div class="ctrack" style="--pv:2">
+<article class="win ben"><div class="body"><span class="ico px">01</span><h3>Autenticidad revisada</h3><p>Cada pieza es inspeccionada a detalle para que recibas calidad real, no imitaciones descartables.</p></div></article>
+<article class="win ben"><div class="body"><span class="ico px">02</span><h3>Estilo sin esfuerzo</h3><p>Combinaciones pensadas para que lo retro encaje con naturalidad en tu clóset actual.</p></div></article>
+<article class="win ben"><div class="body"><span class="ico px">03</span><h3>Drops limitados y reserva rápida</h3><p>Piezas únicas o de corta tirada que puedes apartar antes de que vuelen.</p></div></article>
+<article class="win ben"><div class="body"><span class="ico px">04</span><h3>Acompañamiento cercano</h3><p>Te asesoramos con medidas reales y ajuste antes de confirmar tu compra.</p></div></article>
+</div></div>
+<div class="cnav"><button class="cp" aria-label="Beneficio anterior">&lt;</button><button class="cn" aria-label="Beneficio siguiente">&gt;</button></div></div>
+<p style="margin-top:1.8rem"><button class="btn" data-go="1">Ver piezas disponibles</button></p>
+</section>
+
+<section class="slide" aria-label="Testimonios">
+<h2>Quienes ya visten KROMA</h2>
+<div class="car" style="margin-top:1.4rem"><div class="cview"><div class="ctrack" style="--pv:2">
+<figure class="win tst"><div class="bar px"><span>camila.msg</span><i><b></b></i></div><div class="body"><blockquote>“Pedí una camisa retro y la caída es increíble; la tela se siente firme y el empaque parecía un regalo. Ya quiero la siguiente.”<cite>Camila R.</cite></blockquote></div></figure>
+<figure class="win tst"><div class="bar px"><span>andres.msg</span><i><b></b></i></div><div class="body"><blockquote>“Me cuesta encontrar prendas vintage que me queden bien de hombros, y aquí me ayudaron con las medidas exactas. Cero dudas al comprar.”<cite>Andrés M.</cite></blockquote></div></figure>
+<figure class="win tst"><div class="bar px"><span>valentina.msg</span><i><b></b></i></div><div class="body"><blockquote>“El estilo retro de KROMA tiene ese toque nostálgico pero súper usable en el día a día. Siempre recibo cumplidos cuando salgo.”<cite>Valentina G.</cite></blockquote></div></figure>
+</div></div>
+<div class="cnav"><button class="cp" aria-label="Testimonio anterior">&lt;</button><button class="cn" aria-label="Testimonio siguiente">&gt;</button></div></div>
+</section>
+
+<section class="slide" aria-label="Contacto">
+<div class="two">
+<div>
+<h2>Hablemos de tu próximo look</h2>
+<p class="lead">¿Buscas una prenda en especial, tienes dudas sobre una talla o quieres reservar una pieza? Escríbenos y te respondemos rápido.</p>
+<div class="win"><div class="bar px"><span>nuevo-mensaje</span><i><b></b><b></b></i></div><div class="body">
+<form id="f" novalidate>
+<div><label for="n">Nombre</label><input id="n" autocomplete="name"></div>
+<div><label for="e">Correo</label><input id="e" type="email" autocomplete="email"></div>
+<div><label for="t">¿Qué necesitas?</label><select id="t"><option>Consulta</option><option>Pedido personalizado</option><option>Pedido de piezas</option><option>Unirme al club de lanzamientos retro</option></select></div>
+<div><label for="d">Mensaje</label><textarea id="d"></textarea></div>
+<button class="btn" type="submit">Enviar mensaje</button><p class="msg" id="m" role="status" aria-live="polite"></p>
+</form></div></div>
+</div>
+<div class="win" style="align-self:start;margin-top:7rem"><div class="bar px"><span>canales.exe</span><i><b></b></i></div><div class="body">
+<h3 style="font-size:1.9rem">Escríbenos directo</h3>
+<ul class="ch"><li><a href="#">WhatsApp<small>Respuesta en el día</small></a></li><li><a href="#">Instagram @kroma.retro<small>Mira los drops primero</small></a></li><li><a href="#">hola@kroma.example<small>Pedidos y colaboraciones</small></a></li></ul>
+</div></div>
+</div>
+</section>
+
+</div></div>
+<div id="roul" role="dialog" aria-modal="true" aria-label="Ruleta de moda retro" hidden><div class="win rwin"><div class="bar px"><span>ruleta-retro.exe</span><button class="x px" id="rclose" aria-label="Cerrar ruleta">x</button></div><div class="scene"><div class="ring" id="ring"></div></div><div class="rctl"><div class="chips" id="rchips" role="group" aria-label="Estilos por década"></div><div class="rinfo"><span class="tg px" id="rera"></span><h3 id="rtit"></h3><p id="rtxt"></p></div><div class="rbtn"><button class="btn sm alt" id="rp" aria-label="Anterior">&lt;</button><button class="btn sm" id="rauto" aria-pressed="true">Pausar giro</button><button class="btn sm alt" id="rn" aria-label="Siguiente">&gt;</button></div></div></div></div>
+</div>
+<script src="script.js" defer></script>
+</body>
+</html>
